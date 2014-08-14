@@ -5,19 +5,40 @@ Questão 1
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main()
+{
 
-    int valor1, valor2, valor3, valor4, media;
-    printf("Digite o primeiro valor!:\n ");
-    scanf("%d", &valor1);
-    printf("Digite o segundo valor!:\n ");
-    scanf("%d", &valor2);
-    printf("Digite o terceiro valor!:\n ");
-    scanf("%d", &valor3);
-    printf("Digite o quarto valor!:\n ");
-    scanf("%d", &valor4);
-    media = (valor1 + valor2 + valor3 + valor4)/4;
-    printf("A soma destes valores eh %d", media);
+    int valor1 , valor2 , valor3 , valor4 , media;
+    printf("Digite o primeiro valor!:\n " );
+    scanf( "%d" , &valor1 );
+    printf("Digite o segundo valor!:\n " );
+    scanf( "%d" , &valor2 );
+    printf("Digite o terceiro valor!:\n " );
+    scanf( "%d" , &valor3 );
+    printf( "Digite o quarto valor!:\n " );
+    scanf( "%d", &valor4 );
+    media = ( valor1 + valor2 + valor3 + valor4 ) / 4;
+    printf( "A media e %d" , media );
+    return (0);
+}
+
+==============================
+
+Questão 2
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int Graus_celsius , Graus_Fahrenheit ;
+
+    printf( " Qual a temperatura em graus celsius ?:\n " );
+    scanf( "%d" , &Graus_celsius ) ;
+
+    Graus_Fahrenheit = ( 9/5 * ( Graus_celsius + 32 ) ) ;
+    printf( " A temperatura em fahrenheit e: %d" , Graus_Fahrenheit ) ;
+
     return (0);
 }
 
