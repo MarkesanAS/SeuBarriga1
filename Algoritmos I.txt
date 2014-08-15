@@ -42,3 +42,22 @@ int main()
     return (0);
 }
 
+=============================
+
+Questão 3
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float ChuvasMilimetro , ChuvasPolegada ;
+
+    printf( " Insira a quantidade de chuvas em polegadas !:\n " );
+    scanf( "%f" , &ChuvasPolegada ) ;
+
+    ChuvasMilimetro =  ( ChuvasPolegada *  25,4 ) ;
+    printf( " A quantidade de chuvas em milimetros e: %f" , ChuvasMilimetro ) ;
+
+    return (0);
+}
