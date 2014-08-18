@@ -8,17 +8,17 @@ Questão 1
 int main()
 {
 
-    int valor1 , valor2 , valor3 , valor4 , media;
+    float valor1 , valor2 , valor3 , valor4 , media;
     printf("Digite o primeiro valor!:\n " );
-    scanf( "%d" , &valor1 );
+    scanf( "%f" , &valor1 );
     printf("Digite o segundo valor!:\n " );
-    scanf( "%d" , &valor2 );
+    scanf( "%f" , &valor2 );
     printf("Digite o terceiro valor!:\n " );
-    scanf( "%d" , &valor3 );
+    scanf( "%f" , &valor3 );
     printf( "Digite o quarto valor!:\n " );
-    scanf( "%d", &valor4 );
+    scanf( "%f", &valor4 );
     media = ( valor1 + valor2 + valor3 + valor4 ) / 4;
-    printf( "A media e %d" , media );
+    printf( "A media e %f" , media );
     return (0);
 }
 
