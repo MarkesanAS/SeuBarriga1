@@ -61,3 +61,22 @@ int main()
 
     return (0);
 }
+
+==================================
+Questão 4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int valor , quadrado;
+
+    printf("Qual valor inteiro positivo deseja saber o quadrado ?:\n " );
+    scanf( "%d" , &valor );
+
+    quadrado = ( valor * valor );
+    printf( "O quadrado desse valor eh \n %d" , quadrado );
+    return (0);
+}
