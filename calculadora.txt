@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int valor1, valor2, resultado;
+    char operador;
+    printf( " Digite o primeiro valor!:\n ");
+    scanf( "%d", &valor1);
+    setbuf (stdin , NULL );
+    printf( "Digite o segundo valor!:\n ");
+    scanf( "%d", &valor2);
+    setbuf (stdin , NULL );
+    printf( "Insira um operador!:  ( + - * / ) \n ");
+    scanf( "%c", &operador ) ;
+    setbuf (stdin , NULL );
+    if ( operador == '+' )
+    {
+        resultado = valor1 + valor2;
+    }
+        else if ( operador == '-' )
+        {
+            resultado = valor1 - valor2;
+        }
+            else if ( operador == '*' )
+            {
+                resultado = valor1 * valor2;
+            }
+                else if ( operador == '/' )
+                {
+                    resultado = valor1 / valor2;
+                }
+                    else
+                    {
+                        printf ( " Operador Incorreto " );
+                    }
+
+    printf(" O resultado desta operação eh: %d", resultado);
+    return (0);
+}
