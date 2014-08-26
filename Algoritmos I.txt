@@ -80,3 +80,25 @@ int main()
     printf( "O quadrado desse valor eh \n %d" , quadrado );
     return (0);
 }
+
+Questão 5
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    double custoConsumidor , custoFabrica , porcentagemDistribuidor , porcentagem ;
+    printf("Qual o custo de fabrica para um veiculo ?\n " );
+    scanf( "%lf" , &custoFabrica );
+
+    porcentagemDistribuidor = ( custoFabrica * 0.12 ) ;
+
+    porcentagem = ( custoFabrica * 0.45 ) ;
+
+    custoConsumidor = ( custoFabrica + porcentagemDistribuidor + porcentagem ) ;
+
+    printf( "O custo para o consumidor e de %lf" , custoConsumidor );
+    return (0);
+}
